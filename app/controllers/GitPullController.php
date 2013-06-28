@@ -7,7 +7,7 @@ class GitPullController extends BaseController {
 	  if (($user === $info['user']) and ($pass === $info['pass'])) {
 			$result = `git pull`;
 
-			dd($result);
+			echo $result;
 	  } else {
 			return App::abort(404, "Page not found.");
 	  }
