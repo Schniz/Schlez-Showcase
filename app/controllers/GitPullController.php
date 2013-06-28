@@ -5,9 +5,11 @@ class GitPullController extends BaseController {
 		$info = Config::get('git.info');
 
 	  if (($user === $info['user']) and ($pass === $info['pass'])) {
-			dd('yay');
+			$result = `git pull`;
+
+			dd($result);
 	  } else {
-			dd('nay');
+			return App::abort(404, "Page not found.");
 	  }
 	}
 }
