@@ -15,3 +15,7 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::group(array(), function() {
+  Route::get('git/pull', 'GitPullController@pull');
+});

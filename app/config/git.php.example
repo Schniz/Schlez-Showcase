@@ -1,0 +1,7 @@
+<?php
+return array(
+  'info' => array(
+    'user' => 'USERNAME_HERE',
+    'pass' => 'PASSWORD_HERE'
+  ),
+);

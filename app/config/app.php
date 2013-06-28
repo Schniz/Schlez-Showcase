@@ -116,6 +116,7 @@ return array(
 
 		// Guard
 		'Way\Console\GuardLaravelServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 	),
 
 	/*
