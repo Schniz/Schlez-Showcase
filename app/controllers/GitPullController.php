@@ -1,16 +1,13 @@
 <?php
 
 class GitPullController extends BaseController {
-  public function pull() {
+  public function pull($user, $pass) {
 		$info = Config::get('git.info');
 
-		$user = Request::header('php-auth-user');
-		$pass = Request::header('php-auth-pw');
-
 	  if (($user === $info['user']) and ($pass === $info['pass'])) {
-		dd('yay');
+			dd('yay');
 	  } else {
-		dd('nay');
+			dd('nay');
 	  }
 	}
 }

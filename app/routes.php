@@ -17,5 +17,5 @@ Route::get('/', function()
 });
 
 Route::group(array(), function() {
-  Route::get('git/pull', 'GitPullController@pull');
+  Route::get('git/pull/{user}/{pass}', 'GitPullController@pull');
 });
