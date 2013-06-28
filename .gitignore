@@ -2,6 +2,8 @@
 /public/bower_components
 /app/config/git.php
 /vendor
+/app/assets/sass/.sass-cache
+/.sass-cache
 composer.phar
 composer.lock
 .DS_Store

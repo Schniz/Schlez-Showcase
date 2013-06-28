@@ -1,8 +1,10 @@
 guard :coffeescript, :input => "app/assets/coffee", :output => "public/js"
 
-guard :concat, :type => "css", :files => %w[], :input_dir => "public/css", :output => "public/css/styles.min"
+guard :sass, :input => 'app/assets/sass', :output => 'public/css'
 
-guard :concat, :type => "js", :files => %w[], :input_dir => "public/js", :output => "public/js/scripts.min"
+guard :concat, :type => "css", :files => %w[colors], :input_dir => "public/css", :output => "public/css/styles.min"
+
+guard :concat, :type => "js", :files => %w[main], :input_dir => "public/js", :output => "public/js/scripts.min"
 
 # Refresh the browser on save
 guard 'livereload' do
@@ -53,12 +55,12 @@ guard :refresher do
   end
   watch('public/css/styles.min.css') do |m|
     css = File.read(m[0])
-    File.open(m[0], 'w') { |file| file.write(CSSMin.minify(css)) }
+    # Uncomment for minify
+    #File.open(m[0], 'w') { |file| file.write(CSSMin.minify(css)) }
   end
   watch('public/js/scripts.min.js') do |m|
     js = File.read(m[0])
-    File.open(m[0], 'w') { |file| file.write(JSMin.minify(js)) }
+    # Uncomment for minify
+    #File.open(m[0], 'w') { |file| file.write(JSMin.minify(js)) }
   end
 end
-
-guard :sass, :input => 'app/assets/sass', :output => 'public/css'

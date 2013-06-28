@@ -42,6 +42,9 @@
             color:#555;
         }
     </style>
+
+    <?php echo stylesheet() ?>
+    <?php echo script() ?>
 </head>
 <body>
     <div class="welcome">
