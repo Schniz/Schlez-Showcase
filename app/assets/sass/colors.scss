@@ -2,8 +2,5 @@ $fadedRed: desaturate(#FF4444, 50%);
 $fadedGreen: desaturate(#44FF44, 70%);
 $fadedBlue: desaturate(#4444FF, 70%);
 $brightyWhite: #f7f7f7;
-
-body {
-  background: $brightyWhite;
-  color: $fadedRed;
-}
+$darkGrey: #666;
+$darkerGrey: #333;

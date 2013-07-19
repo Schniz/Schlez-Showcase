@@ -1,0 +1,81 @@
+@import 'colors.scss';
+
+$dirt: url('/images/dirt_tablet_phone.png');
+$logo: url('/images/logo_mobile.png');
+$logoHeight: 381px;
+$logoWidth:  294px;
+
+body {
+  background-color: $brightyWhite;
+}
+
+#logo-holder {
+  background-image: $logo;
+  background-repeat: no-repeat;
+  height: $logoHeight;
+  width: $logoWidth;
+}
+
+#header-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  li {
+    float: left;
+    padding: 0.30em;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .header-icon {
+    color: $darkGrey;
+    font-size: 2.90em;
+    text-decoration: none;
+    border: 0;
+
+    -webkit-mask: $dirt;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+  }
+}
+
+// Links
+
+#header-schlez {
+  .header-icon:hover {
+    color: $darkerGrey;
+  }
+}
+
+#header-facebook {
+  .header-icon:hover {
+    color: $fadedBlue;
+  }
+}
+
+#header-youtube {
+  .header-icon:hover {
+    color: $fadedRed;
+  }
+}
+
+#header-twitter {
+  .header-icon:hover {
+    color: $fadedBlue;
+  }
+}
+
+#header-github {
+  .header-icon:hover {
+    color: $fadedGreen;
+  }
+}
+
+#header-instagram {
+  .header-icon:hover {
+    color: $fadedRed;
+  }
+}

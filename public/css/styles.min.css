@@ -1,3 +1,1 @@
-body {
-  background: #f7f7f7;
-  color: #d07373; }
+body{background-color:#f7f7f7}#logo-holder{background-image:url("/images/logo_mobile.png");background-repeat:no-repeat;height:381px;width:294px}#header-links{list-style:none;padding:0;margin:0 auto}#header-links li{float:left;padding:.30em}#header-links .hidden-text{display:none}#header-links .header-icon{color:#666;font-size:2.90em;text-decoration:none;border:0;-webkit-mask:url("/images/dirt_tablet_phone.png");-webkit-transition:color .4s ease;transition:color .4s ease}#header-schlez .header-icon:hover{color:#333}#header-facebook .header-icon:hover{color:#8585be}#header-youtube .header-icon:hover{color:#d07373}#header-twitter .header-icon:hover{color:#8585be}#header-github .header-icon:hover{color:#85be85}#header-instagram .header-icon:hover{color:#d07373}
