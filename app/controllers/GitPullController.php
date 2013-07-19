@@ -10,6 +10,14 @@ class GitPullController extends BaseController {
 			$result = `git pull`;
 
 			echo $result;
+
+
+			// Call the migration
+			try {
+				Artisan::call('migrate');
+			} catch (Exception $e) {
+				Log::error($e);
+			}
 	  } else {
 			return App::abort(404, "Page not found.");
 	  }
