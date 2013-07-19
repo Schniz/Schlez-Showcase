@@ -97,7 +97,34 @@
   <div class="clearfix"></div>
 
   <section id="blog-posts">
-    <h1>Blog Posts</h1>
+    <ul id="blog-post-list">
+      <li>
+        <article class="article-blog">
+          <h1><a href="{{ article.link }}">{{ article.title }}</a></h1>
+          <h2>{{ article.date }}</h2>
+          <div class="contents">
+            <p>
+              These are my words.
+            </p>
+          </div>
+        </article>
+      </li>
+
+      <li>
+        <article class="article-instagram">
+          <h1><a href="{{ article.link }}">Uploaded a photo to Instagram</a></h1>
+          <h2>{{ article.date }}</h2>
+          <div class="contents">
+            <p>
+              <img class="article-instagram-photo" src="http://distilleryimage1.ak.instagram.com/f02a2c06efde11e2954322000ae80d8d_7.jpg" />
+            </p>
+            <p>
+              {{ article.contents }}
+            </p>
+          </div>
+        </article>
+      </li>
+    </ul>
   </section>
 </body>
 </html>
