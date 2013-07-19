@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "ember": "~1.0.0-rc.6",
-    "font-awesome": "~3.2.1"
+    "font-awesome": "~3.2.1",
+    "alef": "~1.0.0"
   }
 }
