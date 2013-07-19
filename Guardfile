@@ -2,7 +2,7 @@ guard :coffeescript, :input => "app/assets/coffee", :output => "public/js"
 
 guard :sass, :input => 'app/assets/sass', :output => 'public/css'
 
-guard :concat, :type => "css", :files => %w[colors top-links], :input_dir => "public/css", :output => "public/css/styles.min"
+guard :concat, :type => "css", :files => %w[about-me colors top-links], :input_dir => "public/css", :output => "public/css/styles.min"
 
 guard :concat, :type => "js", :files => %w[main], :input_dir => "public/js", :output => "public/js/scripts.min"
 

@@ -9,6 +9,8 @@
   "dependencies": {
     "ember": "~1.0.0-rc.6",
     "font-awesome": "~3.2.1",
-    "alef": "~1.0.0"
+    "alef": "~1.0.0",
+    "league-gothic": "~1.0.0",
+    "fanwood-webfont": "~1.0.0"
   }
 }

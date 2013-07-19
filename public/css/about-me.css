@@ -1,0 +1,62 @@
+.hidden-anchors {
+  display: none; }
+
+#about-me {
+  margin: auto;
+  width: 42.8em;
+  margin: auto;
+  display: inline-block; }
+  #about-me > h1 {
+    font-family: "alef", sans-serif;
+    font-size: 5em;
+    margin: 0;
+    line-height: 1em; }
+
+#about-me-text {
+  margin: 0;
+  font-family: 'Fanwood Text';
+  font-size: 1.3em;
+  padding-left: 2em; }
+
+.advantage-list-container {
+  font-size: 0.8em;
+  width: 31em;
+  margin: 0 auto; }
+  .advantage-list-container .advantage-list-header {
+    font-family: 'League Gothic';
+    font-weight: normal;
+    font-size: 3em;
+    margin: 0;
+    float: left;
+    min-width: 4em;
+    line-height: 2.95em;
+    position: relative; }
+    .advantage-list-container .advantage-list-header::after {
+      font-family: 'Fanwood';
+      content: ' { ';
+      font-size: 3em;
+      line-height: 1em;
+      float: right;
+      color: rgba(102, 102, 102, 0.4);
+      -webkit-mask: url("/images/dirt_tablet_phone.png"); }
+  .advantage-list-container #what-i-do-list,
+  .advantage-list-container #how-i-do-list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+    padding-left: 1em; }
+    .advantage-list-container #what-i-do-list > li,
+    .advantage-list-container #how-i-do-list > li {
+      color: #333333;
+      font-family: 'Fanwood';
+      font-size: 1.4em;
+      line-height: 1.1em; }
+      .advantage-list-container #what-i-do-list > li::before,
+      .advantage-list-container #how-i-do-list > li::before {
+        content: '\e000';
+        font-family: 'SchlezIcon';
+        font-size: 100%;
+        color: #666666; }

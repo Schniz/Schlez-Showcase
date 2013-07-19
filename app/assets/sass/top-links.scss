@@ -1,6 +1,5 @@
 @import 'colors.scss';
 
-$dirt: url('/images/dirt_tablet_phone.png');
 $logo: url('/images/logo_mobile.png');
 $logoHeight: 381px;
 $logoWidth:  294px;
@@ -9,17 +8,59 @@ body {
   background-color: $brightyWhite;
 }
 
+hr {
+  border-width: 0;
+  display: block;
+  width: 80%;
+  -webkit-mask: $dirt;
+  position: relative;
+
+  &::before {
+    content: 'SCHLEZ';
+    text-align: center;
+    color: fade-out($lightGrey, 0.1);
+    top: 0;
+    left: 0;
+    line-height: 1em;
+    display: block;
+    font-size: 20pt;
+    font-family: 'League Gothic';
+    letter-spacing: -1px;
+    //font-weight: bold;
+  }
+
+  &::after {
+    content: ' ';
+    top: 0.5em;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 24%;
+    background: -webkit-linear-gradient(left, transparent 2%, fade-out($lightGrey, 0.25) 33%, fade-out($lightGrey, 0.25) 40%, transparent 45%, transparent 56%, fade-out($lightGrey, 0.25) 59%, fade-out($lightGrey, 0.25) 66%, rgba(0,0,0,0) 98%);
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  text-align: center;
+}
+
 #logo-holder {
   background-image: $logo;
   background-repeat: no-repeat;
   height: $logoHeight;
   width: $logoWidth;
+  float: left;
 }
 
 #header-links {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+  width: $logoWidth + 5;
 
   li {
     float: left;
@@ -28,6 +69,16 @@ body {
 
   .hidden-text {
     display: none;
+  }
+
+  .header-link {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+  }
+
+  .header-link:focus, .header-link:active {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   }
 
   .header-icon {
@@ -44,38 +95,39 @@ body {
 
 // Links
 
-#header-schlez {
-  .header-icon:hover {
-    color: $darkerGrey;
+#header-schlez:hover, #header-schlez:active, #header-schlez:focus {
+  .header-icon {
+    color: darken($darkerGrey, 20%);
+    text-shadow-color: red;
   }
 }
 
-#header-facebook {
-  .header-icon:hover {
-    color: $fadedBlue;
+#header-facebook:hover, #header-facebook:active, #header-facebook:focus {
+  .header-icon {
+    color: darken($fadedBlue, 20%);
   }
 }
 
-#header-youtube {
-  .header-icon:hover {
-    color: $fadedRed;
+#header-youtube:hover, #header-youtube:active, #header-youtube:focus {
+  .header-icon {
+    color: darken($fadedRed, 20%);
   }
 }
 
-#header-twitter {
-  .header-icon:hover {
-    color: $fadedBlue;
+#header-twitter:hover, #header-twitter:active, #header-twitter:focus {
+  .header-icon {
+    color: darken($fadedBlue, 20%);
   }
 }
 
-#header-github {
-  .header-icon:hover {
-    color: $fadedGreen;
+#header-github:hover, #header-github:active, #header-github:focus {
+  .header-icon {
+    color: darken($fadedGreen, 20%);
   }
 }
 
-#header-instagram {
-  .header-icon:hover {
-    color: $fadedRed;
+#header-instagram:hover, #header-instagram:active, #header-instagram:focus {
+  .header-icon {
+    color: darken($fadedRed, 20%);
   }
 }
