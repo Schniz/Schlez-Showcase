@@ -5,7 +5,8 @@
   <title>Laravel PHP Framework</title>
 
   <link rel="stylesheet" href="/bower_components/alef/alef.css" type="text/css" />
-  <link rel="stylesheet" href="/bower_components/fanwood-webfont/webfonts/stylesheet.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="/bower_components/fanwood-webfont/webfonts/stylesheet.css" type="text/css" /> -->
+  <link href='http://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/bower_components/league-gothic/webfonts/stylesheet.css" type="text/css" />
   <link rel="stylesheet" href="/fonts/style.css" />
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
@@ -17,7 +18,11 @@
     <div id="logo-holder"></div>
     <section id="about-me">
       <a id="who-am-i" class="hidden-anchors" name="who-am-i" title="Who Am I?" href="#who-am-i">Who Am I?</a>
-      <h1>Well, Hello There!</h1>
+      <h1>
+        <span>Well,</span>
+        <span>Hello </span>
+        <span>There!</span>
+      </h1>
       <p id="about-me-text">
         Ladies, Gentlemen, This is Gal Schlezinger speakin' over here.<br />
         Currently, I'm all like Senior Java / SOA developer @ IDF. <br />

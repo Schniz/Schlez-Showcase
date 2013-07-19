@@ -16,6 +16,20 @@
 		font-size: 5em;
     margin: 0;
     line-height: 1em;
+
+    > span:first-child {
+      -webkit-transition: color 0.2s ease;
+    }
+    > span:nth-child(2) {
+      -webkit-transition: color 0.4s ease;
+    }
+    > span:nth-child(3) {
+      -webkit-transition: color 0.6s ease;
+    }
+
+    &:hover {
+      color: darken($fadedBlue, 20%);
+    }
 	}
 }
 
@@ -30,6 +44,17 @@
   font-size: 0.8em;
   width: 31em;
   margin: 0 auto;
+  height: 9em;
+  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  background-color: fade-out($brightyWhite, 1);
+  border-radius: 10px;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    background-color: $brightyWhite;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.1);
+  }
 
   .advantage-list-header {
     font-family: 'League Gothic';
@@ -42,7 +67,7 @@
     position: relative;
 
     &::after {
-      font-family: 'Fanwood';
+      font-family: 'Fanwood Text';
       content: ' { ';
       font-size: 3em;
       line-height: 1em;

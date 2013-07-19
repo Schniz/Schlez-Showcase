@@ -1,6 +1,7 @@
 @import 'colors.scss';
 
 $logo: url('/images/logo_mobile.png');
+$logoMarginLeft: 20px;
 $logoHeight: 381px;
 $logoWidth:  294px;
 
@@ -49,6 +50,7 @@ header {
 }
 
 #logo-holder {
+  margin-left: $logoMarginLeft; // Remove on mobile
   background-image: $logo;
   background-repeat: no-repeat;
   height: $logoHeight;
