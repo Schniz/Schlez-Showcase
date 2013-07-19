@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Laravel PHP Framework</title>
+  <title>Gal Schlezinger: Web Artisan</title>
 
   <link rel="stylesheet" href="/bower_components/alef/alef.css" type="text/css" />
   <!-- <link rel="stylesheet" href="/bower_components/fanwood-webfont/webfonts/stylesheet.css" type="text/css" /> -->
@@ -119,7 +119,7 @@
               <img class="article-instagram-photo" src="http://distilleryimage1.ak.instagram.com/f02a2c06efde11e2954322000ae80d8d_7.jpg" />
             </p>
             <p>
-              {{ article.contents }}
+              {{ article.contents }} <!-- A link will be added in the contents, automatically. -->
             </p>
           </div>
         </article>
